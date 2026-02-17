@@ -1,0 +1,1 @@
+version: '3.8'\nservices:\n  mongodb:\n    image: mongo:latest\n    container_name: mongodb\n    ports:\n      - '27017:27017'\n    environment:\n      MONGO_INITDB_ROOT_USERNAME: example\n      MONGO_INITDB_ROOT_PASSWORD: example\n    volumes:\n      - mongodb_data:/data/db\n\nvolumes:\n  mongodb_data:
